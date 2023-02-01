@@ -1,18 +1,20 @@
 #megoldás
-def eredmeny(jatekoslapok, geplapok):
+def eredmeny(jatekoslapok:list, geplapok:list):
     jatekospont = osszpont(jatekoslapok)
     geppont = osszpont(geplapok)
 
     if jatekospont > 21:
-        print("vesztettél")
+        return "jatekos vesztett"
     elif geppont > 21:
-        print("nyertél")
+        return "gep vesztett"
 
 
-def osszpont(lista):
+def osszpont(lista) -> int:
     osszeg = 0
     for i in lista:
         osszeg += i
     return osszeg
+
+
 
 #teszteset
