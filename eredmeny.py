@@ -7,6 +7,9 @@ def eredmeny(jatekoslapok:list, geplapok:list):
         return "jatekos vesztett"
     elif geppont > 21:
         return "gep vesztett"
+    elif jatekospont > 21 and geppont > 21:
+        return "mindenki vesztett"
+    
 
 
 def osszpont(lista) -> int:
@@ -25,7 +28,7 @@ def jatekos_vesztett_teszt():
     print(eredmeny(jatekoslapok, geplapok))
     
 def gep_vesztett_teszt():
-    jatekoslapok = [10,9]
+    jatekoslapok = [10,5,8]
     geplapok = [10,5, 10]
     print(eredmeny(jatekoslapok, geplapok))
 
