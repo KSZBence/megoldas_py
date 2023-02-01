@@ -20,12 +20,18 @@ def osszpont(lista) -> int:
 #teszteset
 
 def jatekos_vesztett_teszt():
-    jatekoslapok = [10,10,2]
+    jatekoslapok = [10,9,3]
     geplapok = [10,11]
+    print(eredmeny(jatekoslapok, geplapok))
+    
+def gep_vesztett_teszt():
+    jatekoslapok = [10,9]
+    geplapok = [10,5, 10]
     print(eredmeny(jatekoslapok, geplapok))
 
 def tesztek():
     jatekos_vesztett_teszt()
+    gep_vesztett_teszt()
 
 
 tesztek()
