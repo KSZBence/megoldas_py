@@ -3,12 +3,13 @@ def eredmeny(jatekoslapok:list, geplapok:list):
     jatekospont = osszpont(jatekoslapok)
     geppont = osszpont(geplapok)
 
-    if jatekospont > 21:
+    if jatekospont > 21 and geppont > 21:
+        return "mindenki vesztett"
+    elif jatekospont > 21:
         return "jatekos vesztett"
     elif geppont > 21:
         return "gep vesztett"
-    elif jatekospont > 21 and geppont > 21:
-        return "mindenki vesztett"
+    
     
 
 
