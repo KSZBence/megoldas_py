@@ -1,4 +1,4 @@
 #megoldás
 def megoldás():
     pass
-#eredmény
+#teszteset
