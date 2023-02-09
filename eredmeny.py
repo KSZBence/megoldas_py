@@ -59,7 +59,7 @@ def jatekos_vesztett_teszt():
         print("Teszteset sikeres.")
     else:
         print("Teszteset sikertelen.")
-    
+
 def gep_vesztett_teszt():
     jatekoslapok = [10,8]
     geplapok = [10,5, 10]
@@ -69,19 +69,10 @@ def gep_vesztett_teszt():
         print("Teszteset sikeres.")
     else:
         print("Teszteset sikertelen.")
-    
-def mindenki_vesztett_dontetlen_teszt():
-    jatekoslapok = [10,9,5]
-    geplapok = [10, 8, 5]
-    vart = "Döntetlen"
-    kapott = eredmeny(jatekoslapok, geplapok)
-    if vart == kapott:
-        print("Teszteset sikeres.")
-    else:
-        print("Teszteset sikertelen.")
+
     
 def jatekos_nyert_teszt():
-    jatekoslapok = [10,9]
+    jatekoslapok = [10,11]
     geplapok = [10, 7]
     vart = "Jatekos nyert"
     kapott = eredmeny(jatekoslapok, geplapok)
@@ -91,17 +82,17 @@ def jatekos_nyert_teszt():
         print("Teszteset sikertelen.")
 
 
-def gep_nyert_teszt():
-    jatekoslapok = [10,7]
-    geplapok = [10, 10]
-    vart = "Gep nyert"
+def jatekos_nyert_19tobb_teszt():
+    jatekoslapok = [10,4,5]
+    geplapok = [10, 7]
+    vart = "Jatekos nyert"
     kapott = eredmeny(jatekoslapok, geplapok)
     if vart == kapott:
         print("Teszteset sikeres.")
     else:
         print("Teszteset sikertelen.")
 
-def jatekos_nyert_lapszammal_teszt():
+def jatekos_nyert_19lapszammal_teszt():
     jatekoslapok = [10, 9]
     geplapok = [10, 4, 5]
     vart = "Jatekos nyert"
@@ -111,8 +102,58 @@ def jatekos_nyert_lapszammal_teszt():
     else:
         print("Teszteset sikertelen.")
 
+def jatekos_vesztett_21_teszt():
+    jatekoslapok = [10,8,3]
+    geplapok = [10,11]
+    vart = "Gep nyert"
+    kapott = eredmeny(jatekoslapok, geplapok)
+    if vart == kapott:
+        print("Teszteset sikeres.")
+    else:
+        print("Teszteset sikertelen.")
 
-def gep_nyert_lapszammal_teszt():
+def jatekos_vesztett_19kevesebb_teszt():
+    jatekoslapok = [10,9]
+    geplapok = [10,5,5]
+    vart = "Gep nyert"
+    kapott = eredmeny(jatekoslapok, geplapok)
+    if vart == kapott:
+        print("Teszteset sikeres.")
+    else:
+        print("Teszteset sikertelen.")
+
+
+def jatekos_vesztett_19lapszammal_teszt():
+    jatekoslapok = [10,5,4]
+    geplapok = [10,9]
+    vart = "Gep nyert"
+    kapott = eredmeny(jatekoslapok, geplapok)
+    if vart == kapott:
+        print("Teszteset sikeres.")
+    else:
+        print("Teszteset sikertelen.")
+
+def gep_nyert_teszt():
+    jatekoslapok = [10,7]
+    geplapok = [10, 11]
+    vart = "Gep nyert"
+    kapott = eredmeny(jatekoslapok, geplapok)
+    if vart == kapott:
+        print("Teszteset sikeres.")
+    else:
+        print("Teszteset sikertelen.")
+
+def gep_nyert_19tobb_teszt():
+    jatekoslapok = [10, 7]
+    geplapok = [10, 4, 5]
+    vart = "Gep nyert"
+    kapott = eredmeny(jatekoslapok, geplapok)
+    if vart == kapott:
+        print("Teszteset sikeres.")
+    else:
+        print("Teszteset sikertelen.")
+
+def gep_nyert_19lapszammal_teszt():
     jatekoslapok = [10, 4, 5]
     geplapok = [10, 9]
     vart = "Gep nyert"
@@ -122,6 +163,48 @@ def gep_nyert_lapszammal_teszt():
     else:
         print("Teszteset sikertelen.")
 
+
+def gep_vesztett_21_teszt():
+    jatekoslapok = [10,11]
+    geplapok = [10,8,3]
+    vart = "Jatekos nyert"
+    kapott = eredmeny(jatekoslapok, geplapok)
+    if vart == kapott:
+        print("Teszteset sikeres.")
+    else:
+        print("Teszteset sikertelen.")
+
+
+def gep_vesztett_19kevesebb_teszt():
+    jatekoslapok = [10,5,5]
+    geplapok = [10,9]
+    vart = "Jatekos nyert"
+    kapott = eredmeny(jatekoslapok, geplapok)
+    if vart == kapott:
+        print("Teszteset sikeres.")
+    else:
+        print("Teszteset sikertelen.")
+
+
+def gep_vesztett_19lapszammal_teszt():
+    jatekoslapok = [10,9]
+    geplapok = [10,5,4]
+    vart = "Jatekos nyert"
+    kapott = eredmeny(jatekoslapok, geplapok)
+    if vart == kapott:
+        print("Teszteset sikeres.")
+    else:
+        print("Teszteset sikertelen.")
+
+def mindenki_vesztett_dontetlen_teszt():
+    jatekoslapok = [10,9,5]
+    geplapok = [10, 5, 10]
+    vart = "Döntetlen"
+    kapott = eredmeny(jatekoslapok, geplapok)
+    if vart == kapott:
+        print("Teszteset sikeres.")
+    else:
+        print("Teszteset sikertelen.")
 
 def dontetlen_21_alatt_teszt():
     jatekoslapok = [10, 3, 5]
@@ -133,17 +216,48 @@ def dontetlen_21_alatt_teszt():
     else:
         print("Teszteset sikertelen.")
 
+def dontetlen21_teszt():
+    jatekoslapok = [10, 3, 8]
+    geplapok = [10, 4, 7]
+    vart = "Döntetlen"
+    kapott = eredmeny(jatekoslapok, geplapok)
+    if vart == kapott:
+        print("Teszteset sikeres.")
+    else:
+        print("Teszteset sikertelen.")
 
-def tesztek():
+def jatekostesztek():
     jatekos_vesztett_teszt()
-    gep_vesztett_teszt()
-    mindenki_vesztett_dontetlen_teszt()
     jatekos_nyert_teszt()
+    jatekos_nyert_19tobb_teszt()
+    jatekos_nyert_19lapszammal_teszt()
+    jatekos_vesztett_21_teszt()
+    jatekos_vesztett_19kevesebb_teszt()
+    jatekos_vesztett_19lapszammal_teszt()
+
+
+def geptesztek():
+    gep_vesztett_teszt()
     gep_nyert_teszt()
-    jatekos_nyert_lapszammal_teszt()
-    gep_nyert_lapszammal_teszt()
-    dontetlen_21_alatt_teszt()    
+    gep_nyert_19tobb_teszt()
+    gep_nyert_19lapszammal_teszt()
+    gep_vesztett_21_teszt()
+    gep_vesztett_19kevesebb_teszt()
+    gep_vesztett_19lapszammal_teszt()
+
     
+    
+def dontetlentesztek():
+    mindenki_vesztett_dontetlen_teszt()
+    dontetlen_21_alatt_teszt()
+    dontetlen21_teszt()
+
+    
+    
+def tesztek():
+    jatekostesztek()
+    geptesztek()
+    dontetlentesztek()
     
 
 
